@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    
+<!--
+    <h:head>
+        <title>个人中心</title>
+        <h:outputStylesheet name="css/personal.css"/>
+    </h:head>
+    
+    <h:body style="background-image: url(resources/images/background.jpg);">
+    </h:body>
+-->
+    <h:head>
+        <title>个人中心</title>
+        <h:outputStylesheet name="css/personal.css"/>
+        <iframe  MARGINWIDTH="0" MARGINHEIGHT="0" HSPACE="0" VSPACE="0" FRAMEBORDER="0" SCROLLING="no" src="head.xhtml" width="100%"  height="auto"/>
+    </h:head>
+
+    <h:body style="background-image: url(resources/images/class/bg7.png); background-size: auto;">
+        
+    <h:outputText class="centerTitle" value="个 人 中 心"/>
+    <ul class="navigation">
+        
+        <div class="num-box xtween" style="opacity: 1;">
+            <div class="num-item">
+                <div class="b" data-rn="project">#{AllController.getMyProjectSum()}</div>
+                <a href="project.xhtml" target="iframe_a" class="h18">我的项目</a>
+            </div>
+            <div class="num-item">
+                <div class="b" data-rn="guard">#{AllController.getMyInvestSum()}</div>
+               <a href="invest.xhtml" target="iframe_a" class="h18">我的捐助</a>
+            </div>	
+            <div class="num-item">
+                <div class="b" data-rn="invest">#{AllController.getMyGuardSum()}</div>
+                <a href="guard.xhtml" target="iframe_a" class="h18">我的守护</a>
+            </div>
+        </div>
+        
+    </ul>
+    
+    <iframe class="detail" src="project.xhtml" name="iframe_a" frameborder="no" width="1900px" height="1350px"/>
+    </h:body>
+</html>

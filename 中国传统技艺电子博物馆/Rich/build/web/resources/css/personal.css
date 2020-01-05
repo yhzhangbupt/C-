@@ -1,0 +1,146 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2019-9-3, 12:08:53
+    Author     : 17119
+*/
+
+
+
+ .tab-menu ul{            
+     padding: 0;            
+     margin: 0;        
+ }        
+ 
+ .tab-menu ul li{            
+     display: inline-block;            
+     width: 200px;            
+     height: 40px;            
+     line-height: 40px;            
+     text-align: center;            
+     cursor: pointer;        
+ }        
+ 
+ .tab-menu ul li.active
+ {            
+     background: #749dcf;        
+ }       
+
+ .tab-con div{            
+     width: 600px;            
+     height: 300px;            
+     background: #F2F2F2;           
+     border: 1px solid #749dcf;;            
+     display: none;            
+     padding: 15px;         
+ }       
+ 
+ .tab-con div:first-child{            
+     display: block;        
+ }
+
+ul {
+    list-style-type: none;
+    margin: 50px;
+    padding: 0;
+    overflow: hidden;
+}
+ 
+li{
+    float:left;
+    margin-left: 160px;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "楷体","楷体_GB2312";  
+    font-weight: bold;
+}
+ 
+/* 鼠标移动到选项上修改背景颜色 */
+li a:hover {
+    background-color: #333;
+    opacity: 0.5;
+}
+
+
+form.jsfcrud_list_form{
+
+    position: relative;
+    width: 200px;
+    height: 100%;
+    margin: auto;
+}
+
+form.jsfcrud_list_form th, td th {
+
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    font-weight: normal;
+    line-height: 68px;
+
+}
+
+.navigation{
+    position:absolute;
+    left:360px;
+    top:1050px;
+    width:1000px;
+}
+
+.detail{
+    position: absolute;
+    top: 1400px;
+}
+
+.centerTitle{
+    font-size: 80px;
+    font-weight: bold;
+    position:absolute;
+    right: 190px;
+    top:270px;
+    margin-left: 10px;
+    font-family: "楷体","楷体_GB2312";
+    color: white;
+}
+
+.num-item .b {
+    font-family: impact;
+    font-size: 100px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.num-box {
+    margin-bottom: 57px;
+    text-align: center;
+}
+
+
+.num-item {
+    display: inline-block;
+    width: 23%;
+    vertical-align: top;
+    margin-left: 30px;
+}
+
+.num-item .h18 {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "楷体","楷体_GB2312";  
+    font-weight: bold;
+}
+
+

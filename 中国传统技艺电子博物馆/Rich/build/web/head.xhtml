@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+            <style>
+
+                .icon{
+                    width: 50px;
+                    height: 50px;
+                    margin-top: 13px;
+                    margin-left: 60px;
+                }
+                .title1{
+                    width:1900px;
+                    height:84px;
+                    display:flex;
+                    flex-direction:row;
+                    background-color: rgba(51,51,51,0.5);
+                }
+                .text{
+                    line-height: 76px;
+                    font-family: "楷体","楷体_GB2312";
+                    font-size: 20px;
+                    color: white;
+                    text-decoration: none;
+                }
+                .name{
+                    line-height: 76px;
+                    font-family: FZYaoti;
+                    font-size: 22px;
+                    color: white;
+                    text-decoration: none;
+                    margin-left: 30px;
+                    margin-right: 1000px;
+                    font-family: "楷体","楷体_GB2312";  
+                }
+                .title2{
+                    width:1900px;
+                    height:60px;
+                    display:flex;
+                    flex-direction:row;
+                    margin-top: 2px;
+                    background-color: rgba(51,51,51,0.5)
+                }
+
+                .tab{
+                    line-height: 54px;
+                    margin-left: 240px;
+                    margin-right: 50px;
+                    font-family: "楷体","楷体_GB2312";
+                    text-align:center;
+                    text-decoration: none;
+                    color:white;
+                    font-size: 26px;
+
+                }
+            </style>
+
+        </h:head>
+
+        <h:body>
+
+            <div style="position: absolute; left: 0px; top:5px">
+                <div class="title1">
+                    <img class="icon" src="resources/images/sxy/icon.png" />
+                    <h:form>
+                        <h:commandLink class="name" value="中国传统技艺·中国传统技艺电子博物馆" action="index" target = "_top"/>
+                        <h:commandLink class="text" value="项目申请   |" action = "CreatePro" target="_top" rendered="#{AllController.isLogin()}"/>                                    
+                        <h:commandLink class="text" value="登陆|注册" action="log_in" target = "_top" rendered="#{AllController.isLogout()}"/>
+                        <h:commandLink class="text" value="   个人中心"  action="center" target="_top" rendered="#{AllController.isLogin()}"/>
+
+                    </h:form>
+                </div>
+
+                <div class="title2">
+                    <h:form>
+                        <h:body class="tab"></h:body>
+                       
+                        <h:commandLink class="tab" value="首页" action="#{AllController.indexChangeKind()}" target = "_top"/>
+                        <h:commandLink class="tab" value="机构" action="#{AllController.institutionChangeKind()}" target = "_top"/>
+                        <h:commandLink class="tab" value="清单" action="#{AllController.listChangeKind()}" target = "_top"/>
+                        <h:commandLink class="tab" value="百科" action="#{AllController.introduceChangeKind()}" target = "_top"/>
+                        <h:commandLink class="tab" value="资源" action="#{AllController.ziyuanChangeKind()}" target = "_top"/>
+
+                    </h:form>
+                </div>
+            </div>
+
+        </h:body>
+
+    </f:view>
+</html>
+
