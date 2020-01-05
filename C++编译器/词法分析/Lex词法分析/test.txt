@@ -1,0 +1,19 @@
+int main()
+{
+    int day,x1,x2;    /*define day,x1,x2 3 basic type*/
+    day=9;
+    x2=1;
+
+    //loop
+    while(day>0)
+    {
+        x1=(x2+1)*2;    /*one day*/
+        x2=x1;
+        day--;    /*decrease*/
+    }
+    //jsfgj "the +sum"
+    char a[10]="abc";    /* the +sum*/
+    int 3sf=14;
+    char ca='b';
+    return 0;
+}
